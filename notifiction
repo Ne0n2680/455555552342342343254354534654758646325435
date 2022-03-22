@@ -1,3 +1,4 @@
+---NOTIFCITION
 -- Gui to Lua
 -- Version: 3.2
 
@@ -105,11 +106,17 @@ TextLabel_4.TextWrapped = true
 
 -- Scripts:
 
-local function EXKSDW_fake_script() -- Frame.LocalScript 
+local function WEYQUI_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	
 	local object = script.Parent
 	object:TweenPosition(UDim2.new(0,0,0.89,0))
 end
-coroutine.wrap(EXKSDW_fake_script)()
+coroutine.wrap(WEYQUI_fake_script)()
+local function QUJDL_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	ScreenGui.Parent = game.CoreGui
+end
+coroutine.wrap(QUJDL_fake_script)()
